@@ -3,19 +3,40 @@
 <head>
 <title> html</title>
 <meta charset="utf-8">
-<h1>
-  <a href="index.html" title="This is Main"><li>Web</li></a>
-</h1>
-<ol>
-  <li><a href="html.html" title="What is HTMl"> HTML</a></li>
-  <li><a href="css.html" title="this is css"> CSS</a></li>
-<li> Java Script</li>
-</ol></head>
+<link rel="stylesheet"href="style.css">
+</head>
 <body>
-<h1>HTML</h1>
-<h2> welcome!</h2>
+
+<h1>
+  <a href="index.HTML" title="This is Main">Web</a>
+</h1>
+<input type="button" value="Night mode" id= "mode_button" onclick = "
+  if(document.querySelector('#mode_button').value ==='Night mode') {
+  document.querySelector('body').style.backgroundColor = 'black'
+  document.querySelector('body').style.color = 'white'
+  document.querySelector('h1').style.backgroundColor = 'pink'
+  document.querySelector('ol').style.backgroundColor = 'pink'
+  document.querySelector('#mode_button').value = 'Light mode'
+} else {
+  document.querySelector('body').style.backgroundColor = 'white'
+  document.querySelector('body').style.color = 'black'
+  document.querySelector('h1').style.backgroundColor = 'lightgreen'
+  document.querySelector('ol').style.backgroundColor = 'lightgreen'
+  document.querySelector('#mode_button').value = 'Night mode'
+}
+">
+<div id="grid">
+
+<ol>
+  <a href="html.HTML" title="What is HTMl"><li> HTML</li></a>
+  <a href="css.HTML" title="this is css"><li> CSS</li></a>
+  <a href="Java Script.html" title="JAVA"><li>Java Script</li></a>
+</ol>
+<div id="article">
+
+<h2>HTML</h2>
 <p>
-<a href="https://atom.io/" target="_blank" title="눌러봐">
+<a href="https://developer.mozilla.org/ko/docs/Web/HTML" target="_blank" title="What is HTML?(MDN)">
 Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web
 </u>pages</strong> and web applications. Web browsers recieve HTML documents from a web server
 or from local storage and render them into multimedia web pages. HTML describes
@@ -28,5 +49,7 @@ appearance of the document.
   semantics for text such as headings, paragraphs, lists, links, quotes and
   other items. HTML elements are delineated by tags, written using angle brackets
 </p>
+</div>
+</div>
 </body>
 </html>
